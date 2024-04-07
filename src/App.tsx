@@ -3,6 +3,10 @@ import Home from "@/components/Home/Home.tsx";
 export default function App() {
 
   return (
-    <Home />
+    <div
+      className="bg-white text-black"
+    >
+      <Home/>
+    </div>
   )
 }
