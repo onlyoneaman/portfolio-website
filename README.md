@@ -10,7 +10,6 @@ Read [the blog post about this template](https://cpojer.net/posts/fastest-fronte
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org)
 - [Tailwind](https://tailwindcss.com/)
-- [pnpm](https://pnpm.io/ja/) (_Optional_)
 
 ![screenshot of `App.tsx`](./screenshot.png)
 
