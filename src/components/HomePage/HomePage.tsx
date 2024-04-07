@@ -1,4 +1,5 @@
 import Container from "@/components/Layout/Container.js";
+import {Typewriter} from 'react-simple-typewriter';
 
 const HomePage = () => {
 
@@ -9,7 +10,13 @@ const HomePage = () => {
           Hey, I'm Aman
         </h1>
         <h2>
-          I love to code
+          I love to{" "}
+          <span>
+            <Typewriter
+              words={['Code', 'Design', 'Build', 'Innovate']}
+              cursor
+            />
+          </span>
         </h2>
 
         <p>
@@ -17,7 +24,8 @@ const HomePage = () => {
           Platform. Raised $100K for Engagebud.
           I have worked with startups in US, India.
 
-          I help starups and businesses built their web applications and apps. As a Full Stack Developer, I can build you
+          I help starups and businesses built their web applications and apps. As a Full Stack Developer, I can build
+          you
           product from scratch or help you with your existing product.
 
           Talk to me about AI, new ideas, life, or anything else.
