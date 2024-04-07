@@ -1,5 +1,4 @@
-const Sider = () => {
-
+const RouteButtons = () => {
   const links = [
     {
       path: "/",
@@ -15,18 +14,16 @@ const Sider = () => {
     },
   ]
 
-  return (
+  return(
     <div
-      className="w-1/5 h-screen bg-gray-200"
+      className="space-y-2"
     >
-      Sider
-
       {
         links.map((link, index) => {
           return (
             <div
+              className="cursor-pointer p-2 hover:bg-gray-300 rounded-md"
               key={index}
-              className="p-2"
             >
               <a
                 href={link.path}
@@ -41,4 +38,4 @@ const Sider = () => {
   )
 };
 
-export default Sider;
+export default RouteButtons;

@@ -1,4 +1,4 @@
-import Sider from "@/components/Layout/Sider.js";
+import Sider from "@/components/Layout/Sider/Sider.js";
 import HomePage from "@/components/HomePage/HomePage.js";
 import Footer from "@/components/Layout/Footer.js";
 import {Route, Routes} from "react-router-dom";
