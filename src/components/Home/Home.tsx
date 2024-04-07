@@ -4,42 +4,38 @@ import Footer from "@/components/Layout/Footer.js";
 import {Route, Routes} from "react-router-dom";
 import AboutPage from "@/components/AboutPage/index.js";
 import ContactPage from "@/components/ContactPage/index.js";
+import SeoPart from "@/components/Layout/SeoPart.js";
 
 const Home = () => {
 
-  const routes = [
-    {
-      path: "/",
-      name: "Home",
-      component: HomePage
-    },
-  ]
-
   return (
-    <div
-      className="flex items-stretch"
-    >
-      <Sider/>
+    <>
+      <SeoPart />
       <div
-        className="w-4/5 min-h-full flex flex-col bg-gray-100 overflow-y-scroll"
+        className="flex items-stretch min-w-full"
       >
-        <Routes>
-          <Route
-            index
-            element={<HomePage/>}
-          />
-          <Route
-            path="/about"
-            element={<AboutPage/>}
-          />
-          <Route
-            path="/contact"
-            element={<ContactPage />}
-          />
-        </Routes>
-        <Footer/>
+        <Sider/>
+        <div
+          className="grow min-h-full flex flex-col bg-gray-100 overflow-y-scroll"
+        >
+          <Routes>
+            <Route
+              element={<HomePage/>}
+              index
+            />
+            <Route
+              element={<AboutPage/>}
+              path="/about"
+            />
+            <Route
+              element={<ContactPage />}
+              path="/contact"
+            />
+          </Routes>
+          <Footer/>
+        </div>
       </div>
-    </div>
+    </>
   )
 };
 
