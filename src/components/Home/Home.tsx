@@ -16,7 +16,7 @@ const Home = () => {
       >
         <Sider/>
         <div
-          className="grow min-h-full flex flex-col bg-gray-100 overflow-y-scroll"
+          className="grow min-h-full flex flex-col bg-primary overflow-y-scroll"
         >
           <Routes>
             <Route

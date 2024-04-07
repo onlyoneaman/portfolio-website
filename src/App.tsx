@@ -4,7 +4,7 @@ export default function App() {
 
   return (
     <div
-      className="bg-white text-black"
+      className="bg-primary text-white"
     >
       <Home/>
     </div>
