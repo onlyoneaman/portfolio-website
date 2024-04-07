@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const RouteButtons = () => {
   const links = [
     {
@@ -14,23 +16,20 @@ const RouteButtons = () => {
     },
   ]
 
-  return(
+  return (
     <div
       className="space-y-2"
     >
       {
         links.map((link, index) => {
           return (
-            <div
-              className="cursor-pointer p-2 hover:bg-gray-300 rounded-md"
+            <Link
+              className="block cursor-pointer p-2 hover:bg-gray-300 rounded-md"
               key={index}
+              to={link.path}
             >
-              <a
-                href={link.path}
-              >
-                {link.name}
-              </a>
-            </div>
+              {link.name}
+            </Link>
           )
         })
       }
