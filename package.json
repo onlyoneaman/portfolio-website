@@ -8,7 +8,7 @@
   },
   "type": "module",
   "engines": {
-    "node": ">=18.11.0",
+    "node": ">=18.11.0"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.0",
@@ -46,7 +46,6 @@
   },
   "scripts": {
     "build": "vite build",
-    "dev:update-deps": "rm -rf node_modules/ **/node_modules && npm install",
     "dev": "vite dev",
     "format": "prettier --write .",
     "lint:format": "prettier --cache --check .",
