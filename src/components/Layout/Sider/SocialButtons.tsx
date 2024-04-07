@@ -28,6 +28,7 @@ const SocialButtons = () => {
               className="cursor-pointer space-x-2 flex items-center hover:bg-gray-300 rounded-md p-2"
               href={socialLink.link}
               key={index}
+              target={"_blank"}
             >
               <span>
                 {socialLink.icon}
