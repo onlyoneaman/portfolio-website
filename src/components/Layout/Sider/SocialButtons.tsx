@@ -19,27 +19,37 @@ const SocialButtons = () => {
 
   return (
     <div
-      className="space-x-2"
+      className="space-x-2 py-5"
     >
-      {
-        socialLinks.map((socialLink, index) => {
-          return (
-            <a
-              className="cursor-pointer space-x-2 flex items-center hover:bg-gray-300 rounded-md p-2"
-              href={socialLink.link}
-              key={index}
-              target={"_blank"}
-            >
+      <span
+        className="text-sm"
+      >
+        Follow
+      </span>
+      <div>
+        {
+          socialLinks.map((socialLink, index) => {
+            return (
+              <a
+                className={
+                  `flex items-center justify-start gap-2 cursor-pointer py-1.5 hover:text-white rounded-md text-sm ` +
+                  `text-gray-400 `
+                }
+                href={socialLink.link}
+                key={index}
+                target={"_blank"}
+              >
               <span>
                 {socialLink.icon}
               </span>
-              <span>
+                <span>
                 {socialLink.title}
               </span>
-            </a>
-          )
-        })
-      }
+              </a>
+            )
+          })
+        }
+      </div>
     </div>
   );
 };

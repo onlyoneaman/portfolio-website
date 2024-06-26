@@ -11,7 +11,7 @@ const AvatarBox = () => {
 
   return (
     <div
-      className="flex items-center justify-center space-x-4 mb-8"
+      className="flex items-center justify-start space-x-2 mb-8"
       onClick={() => returnToHome()}
     >
       <Avatar>
@@ -26,7 +26,7 @@ const AvatarBox = () => {
       <div
         className="text-xs flex flex-col space-y-1"
       >
-        <span>
+        <span className="text-white">
           Aman
         </span>
         <span>

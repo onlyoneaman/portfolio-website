@@ -16,15 +16,20 @@ const RouteButtons = () => {
     },
   ]
 
+  const activeLink = window.location.pathname;
+
   return (
     <div
-      className="space-y-2"
+      className="space-y-1"
     >
       {
         links.map((link, index) => {
           return (
             <Link
-              className="block cursor-pointer p-2 hover:bg-gray-300 rounded-md"
+              className={
+              `block cursor-pointer py-1.5 px-2 hover:text-white rounded-md text-sm ` +
+                (activeLink === link.path ? " bg-gray-600 text-white " : "")
+              }
               key={index}
               to={link.path}
             >
