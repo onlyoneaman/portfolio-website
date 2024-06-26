@@ -1,10 +1,14 @@
 import Container from "@/components/Layout/Container.js";
+import ContainerTitle from "@/components/Common/ContainerTitle.js";
 
 const ContactPage = () => {
 
   return (
-    <Container>
-      <h1>Contact Page</h1>
+    <div className="space-y-4">
+      <ContainerTitle
+        title={"Get in Touch"}
+      />
+
       <h2>
         If you're building in / excited about AI or just wanna chat, let's connect.
       </h2>
@@ -24,7 +28,7 @@ const ContactPage = () => {
       <div>
         Subscribe to Newsletter
       </div>
-    </Container>
+    </div>
   );
 };
 

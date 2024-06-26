@@ -1,4 +1,3 @@
-import Container from "@/components/Layout/Container.js";
 import aboutImg from '@/assets/about.png';
 import ContainerTitle from "@/components/Common/ContainerTitle.js";
 import EmailButton from "@/components/Common/EmailButton.js";
@@ -7,7 +6,7 @@ import GetInTouchButton from "@/components/Common/GetInTouchButton.js";
 const AboutPage = () => {
 
   return (
-    <Container>
+    <>
       <div
         className="space-y-5"
       >
@@ -60,7 +59,7 @@ const AboutPage = () => {
           <EmailButton/>
         </div>
       </div>
-    </Container>
+    </>
   )
 };
 

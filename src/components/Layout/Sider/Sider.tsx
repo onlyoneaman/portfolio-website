@@ -8,7 +8,7 @@ const Sider = () => {
 
   return (
     <div
-      className="w-1/4 md:w-1/6 h-screen bg-slate p-4"
+      className="fixed left-0 max-w-[200px] w-1/4 md:w-1/6 h-screen bg-slate p-4 overflow-y-auto"
     >
       <AvatarBox />
 
