@@ -1,21 +1,19 @@
 import Container from "@/components/Layout/Container.js";
 import {Typewriter} from 'react-simple-typewriter';
-import {Button} from "@/components/ui/button.js";
 import ContactButton from "@/components/Common/ContactButton.js";
 import EmailButton from "@/components/Common/EmailButton.js";
+import ContainerTitle from "@/components/Common/ContainerTitle.js";
 
 const HomePage = () => {
 
   return (
     <Container>
       <div
-        className="space-y-4 p-5 md:p-12"
+        className="space-y-4"
       >
-        <h1
-          className="text-4xl font-medium"
-        >
-          {"Hey, I'm Aman"}
-        </h1>
+        <ContainerTitle
+          title="Hello, I'm Aman"
+        />
         <h2
           className="text-3xl font-medium"
         >
